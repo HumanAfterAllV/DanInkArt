@@ -1,0 +1,15 @@
+/*GRID Index*/
+#sec__1{
+    height: 100vh;
+}
+
+#sec__2{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#sec__3{
+    height: 100vh;
+    display: grid;
+}

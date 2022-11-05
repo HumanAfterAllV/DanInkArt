@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <section id="sec__1--contact">
+        <div class="sec__1--contact__div1">
+            <a data-aos="fade-down" data-aos-duration="2000" href="/index.html">DanInKArt</a>
+            <h4>Contact</h4>
+            <p><span>M: </span>+2727823838</p>
+            <p><span>E: </span>danyhg98@gmail.com</p>
+        </div>
+        <div class="sec__1--contact__div2">
+            <form id="form" action="">
+                <input name="name" type="text" placeholder="Name" autocomplete="off" maxlength="25" required>
+                <input name="lastname" type="text" placeholder="Last Name" autocomplete="off" maxlength="25" required>
+                <input name="email" type="email" placeholder="Email Address" autocomplete="off" maxlength="35" required>
+                <div class="form__button">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+</body>
+<script>
+    const $form = document.querySelector('#form"')
+    $form.addEventListener('submit' , (event) =>{
+        event.preventDefault()
+        const formData = new FormData(event.currentTarget)
+        debugger
+        })
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</html>

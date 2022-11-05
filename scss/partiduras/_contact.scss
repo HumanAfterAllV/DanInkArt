@@ -1,0 +1,99 @@
+#sec__1--contact{
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+.sec__1--contact__div1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.sec__1--contact__div1 a{
+    font-family: "Lato-Bold";
+    font-size: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 3px;
+    width: 200px;
+    position: relative;
+    color: black;
+    text-align: center;
+ 	
+	&:after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-color: black;
+		transform: scaleX(0);
+		transition: transform cubic-bezier(.84,.23,0,.96) .2s;
+	}
+	
+	&:hover:after {
+		transform: scaleX(1);
+	}
+}
+
+.sec__1--contact__div1 h4{
+    font-family: "Lato-Light";
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.sec__1--contact__div1 span{
+    font-weight: bold;
+}
+
+.sec__1--contact__div1 p{
+    font-family: "Lato-Light";
+    font-size: 1rem;
+    padding-top: 0.8rem;
+}
+
+
+#form{
+    display: flex;
+    flex-flow:row wrap ;
+    align-items: center;
+    justify-content: center;
+}
+
+#form input{
+    font-family: "Lato-Light";
+    vertical-align: middle;
+    margin: 5px 15px 5px 0px;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 1px solid rgb(43, 42, 42);
+}
+
+
+.form__button button{
+    font-family: "Lato-Light";
+    min-width: 130px;
+    height: 45px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: none;
+    background: #343a40;
+    box-shadow: 0 5px #212529;
+}
+
+.form__button button:hover {
+    box-shadow: 0 3px #212529;
+    top: 1px;
+}
+      
+.form__button button:active {
+    box-shadow: 0 0 #212529;
+    top: 5px;
+}

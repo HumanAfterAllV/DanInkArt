@@ -18,3 +18,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
+
+/*GRID Contact*/
+#sec__1--contact{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}

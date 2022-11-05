@@ -1,6 +1,9 @@
 /*GRID Index*/
 #sec__1{
     height: 100vh;
+    display: grid;
+    grid-template-rows: 550px auto;
+
 }
 
 #sec__2{
@@ -12,4 +15,6 @@
 #sec__3{
     height: 100vh;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }

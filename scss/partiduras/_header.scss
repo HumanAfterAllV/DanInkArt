@@ -1,0 +1,68 @@
+/*------------Header-------------*/
+#header{
+    height: 55px;
+    width: 100%;
+    grid-area: headerF;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    z-index: 2;
+    position: fixed;
+    background-attachment: fixed;
+    background: rgba( 255, 255, 255, 0 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+}
+
+.header__icon{
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.header__icon a{
+    text-decoration: none;
+    font-family: "Bree-Serif";
+    font-size: 1.5rem;
+    color: white;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 8rem;
+}
+
+.header__nav--ul{
+    display: flex;
+    list-style: none;
+
+}
+
+.header__nav--ul__element{
+    text-decoration: none;
+    padding-right: 4rem;
+    font-family: "Bree-Serif";
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+
+    &:after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+        width: 70px;
+		height: 2px;
+		background-color: white;
+		transform: scaleX(0);
+		transition: transform cubic-bezier(.84,.23,0,.96) .2s;
+	}
+	
+	&:hover:after {
+		transform: scaleX(1);
+	}
+}

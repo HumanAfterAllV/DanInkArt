@@ -1,12 +1,112 @@
 /*---------Sec__1*--------*/
 #sec__1{
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
+
+.sec__1--div1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Sec1-Fondo.jpg");
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+}
+
+.sec__1--div1__figure{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.sec__1--div1__figure--img{
+    width: 300px;
+    z-index: 2;
+}
+.sec__1--div2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);  
+}
+
+.sec__1--div2 h1{
+    font-family: "Bree-Serif";
+    font-size: 3rem;
+}
+
+.sec__1--div2 h2{
+    font-family: "Lato-BlackItalic";
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+}
+
+.sec__1--div2__a{
+    padding-top: 3rem;
+}
+
+
+.sec__1--div2 a{
+    font-family: "Bree-Serif";
+    font-size: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 3px;
+    width: 200px;
+    position: relative;
+    color: black;
+    text-align: center;
+ 	
+	&:after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-color: black;
+		transform: scaleX(0);
+		transition: transform cubic-bezier(.84,.23,0,.96) .2s;
+	}
+	
+	&:hover:after {
+		transform: scaleX(1);
+	}
+}
+
+
+/*
+.sec__1--div2__button button{
+    font-family: "Bree-Serif";
+    font-size: 1rem;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: black;
+  }
+  .sec__1--div2__button button:hover {
+    background: #fff;
+    color: black
+  }
+*/
+
 /*--------Sec__2---------*/
 #sec__2{
     background-repeat: no-repeat;
 }
 
-.header__nav--element{
-    font-size: 5rem;
+.sec__2--div1{
+    border: 15px;
 }

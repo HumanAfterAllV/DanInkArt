@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "Bree-Serif";
+  src: url(/fonts/Bree_Serif/BreeSerif-Regular.ttf); }
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(/fonts/Lato-Font/Lato-Regular.ttf); }
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url(/fonts/Lato-Font/Lato-Bold.ttf); }
+
+@font-face {
+  font-family: "Lato-BlackItalic";
+  src: url(/fonts/Lato-Font/Lato-BlackItalic.ttf); }
+
+/*GRID Index*/
+#sec__1 {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 550px auto; }
+
+#sec__2 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+#sec__3 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr; }
+
+/*------------Header-------------*/
+#header {
+  height: 55px;
+  width: 100%;
+  grid-area: headerF;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  z-index: 2;
+  position: fixed;
+  background-attachment: fixed;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); }
+
+.header__icon {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem; }
+
+.header__icon a {
+  text-decoration: none;
+  font-family: "Bree-Serif";
+  font-size: 1.5rem;
+  color: white; }
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 8rem; }
+
+.header__nav--ul {
+  display: flex;
+  list-style: none; }
+
+.header__nav--ul__element {
+  text-decoration: none;
+  padding-right: 4rem;
+  font-family: "Bree-Serif";
+  font-size: 1.5rem;
+  color: white;
+  position: relative; }
+  .header__nav--ul__element:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 70px;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform cubic-bezier(0.84, 0.23, 0, 0.96) 0.2s; }
+  .header__nav--ul__element:hover:after {
+    transform: scaleX(1); }
+
+/*---------Sec__1*--------*/
+#sec__1 {
+  background-repeat: no-repeat; }
+
+.sec__1--div1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Sec1-Fondo.jpg");
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 1; }
+
+.sec__1--div1__figure {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.sec__1--div1__figure--img {
+  width: 300px;
+  z-index: 2; }
+
+.sec__1--div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%); }
+
+.sec__1--div2 h1 {
+  font-family: "Bree-Serif";
+  font-size: 3rem; }
+
+.sec__1--div2 h2 {
+  font-family: "Lato-BlackItalic";
+  letter-spacing: 3px;
+  font-size: 1.5rem; }
+
+.sec__1--div2__a {
+  padding-top: 3rem; }
+
+.sec__1--div2 a {
+  font-family: "Bree-Serif";
+  font-size: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 3px;
+  width: 200px;
+  position: relative;
+  color: black;
+  text-align: center; }
+  .sec__1--div2 a:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform cubic-bezier(0.84, 0.23, 0, 0.96) 0.2s; }
+  .sec__1--div2 a:hover:after {
+    transform: scaleX(1); }
+
+/*
+.sec__1--div2__button button{
+    font-family: "Bree-Serif";
+    font-size: 1rem;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: black;
+  }
+  .sec__1--div2__button button:hover {
+    background: #fff;
+    color: black
+  }
+*/
+/*--------Sec__2---------*/
+#sec__2 {
+  background-repeat: no-repeat; }
+
+.sec__2--div1 {
+  border: 15px; }
